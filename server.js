@@ -120,4 +120,6 @@ app.get("/api/reviews/:serviceId", (req, res) => {
 });
 
 app.get("*", (req, res) => res.sendFile(path.join(__dirname, "public", "index.html")));
-app.listen(PORT, () => console.log(`ServiceNest running at http://localhost:${PORT}`));
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`ServiceNest running at port ${PORT}`);
+});
