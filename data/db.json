@@ -1,0 +1,155 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Rebba Saikiran",
+      "email": "rebbasaikiran67@gmail.com",
+      "passwordHash": "$2a$10$cSu6T3siuhCUpTTChyHPLOcJG9R/4yLl0zjXBn8cA/xaVmC68pTTq",
+      "role": "customer",
+      "createdAt": "2026-10-23T13:56:29.061Z"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Home Cleaning",
+      "category": "Home",
+      "price": 799,
+      "duration": "2–3 hours",
+      "provider": "Sparkle Home Care",
+      "description": "Reliable home cleaning for apartments and houses.",
+      "rating": 5,
+      "reviews": 1,
+      "icon": "🧹"
+    },
+    {
+      "id": 2,
+      "name": "Plumbing Repair",
+      "category": "Repairs",
+      "price": 499,
+      "duration": "1 hour",
+      "provider": "QuickFix Plumbing",
+      "description": "Tap leaks, pipe repairs and bathroom fittings.",
+      "rating": 4.7,
+      "reviews": 28,
+      "icon": "🔧"
+    },
+    {
+      "id": 3,
+      "name": "Maths Tutoring",
+      "category": "Education",
+      "price": 599,
+      "duration": "1 hour",
+      "provider": "LearnWell Tutors",
+      "description": "One-to-one tutoring for school and college students.",
+      "rating": 4.9,
+      "reviews": 41,
+      "icon": "📚"
+    },
+    {
+      "id": 4,
+      "name": "Electrical Work",
+      "category": "Repairs",
+      "price": 399,
+      "duration": "1 hour",
+      "provider": "BrightWire Services",
+      "description": "Safe installation and troubleshooting for home electrical needs.",
+      "rating": 4.6,
+      "reviews": 19,
+      "icon": "💡"
+    },
+    {
+      "id": 5,
+      "name": "AC Service",
+      "category": "Home",
+      "price": 899,
+      "duration": "1–2 hours",
+      "provider": "CoolBreeze Experts",
+      "description": "AC inspection, filter cleaning and routine maintenance.",
+      "rating": 4.7,
+      "reviews": 25,
+      "icon": "❄️"
+    },
+    {
+      "id": 6,
+      "name": "Website Design",
+      "category": "Digital",
+      "price": 2499,
+      "duration": "Project-based",
+      "provider": "PixelCraft Studio",
+      "description": "Responsive landing pages and small business websites.",
+      "rating": 4.9,
+      "reviews": 16,
+      "icon": "💻"
+    },
+    {
+      "id": 7,
+      "name": "Appliance Repair",
+      "category": "Repairs",
+      "price": 549,
+      "duration": "1–2 hours",
+      "provider": "FixIt Appliance Care",
+      "description": "Initial diagnosis and repair for common home appliances.",
+      "rating": 4.5,
+      "reviews": 22,
+      "icon": "🛠️"
+    },
+    {
+      "id": 8,
+      "name": "Personal Fitness",
+      "category": "Wellness",
+      "price": 699,
+      "duration": "1 hour",
+      "provider": "MoveBetter Coaching",
+      "description": "Personalised fitness coaching for your goals and level.",
+      "rating": 4.8,
+      "reviews": 31,
+      "icon": "🏋️"
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "userId": 1,
+      "serviceId": 1,
+      "serviceName": "Home Cleaning",
+      "provider": "Sparkle Home Care",
+      "price": 799,
+      "date": "2026-10-28",
+      "time": "11:00 AM",
+      "address": "Maruti nagar, Dilsukhnagar",
+      "notes": "Be on time",
+      "status": "Cancelled",
+      "paymentStatus": "Pay on service",
+      "createdAt": "2026-10-23T13:57:17.919Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "serviceId": 6,
+      "serviceName": "Website Design",
+      "provider": "PixelCraft Studio",
+      "price": 2499,
+      "date": "2026-11-01",
+      "time": "04:00 PM",
+      "address": "Maruti nagar, Dilsukhnagar",
+      "notes": "",
+      "status": "Confirmed",
+      "paymentStatus": "Pay on service",
+      "createdAt": "2026-10-23T14:00:43.269Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "userId": 1,
+      "serviceId": 1,
+      "rating": 5,
+      "comment": "On time service. Good.",
+      "createdAt": "2026-10-23T14:01:04.040Z"
+    }
+  ],
+  "nextUserId": 2,
+  "nextBookingId": 3,
+  "nextReviewId": 2
+}

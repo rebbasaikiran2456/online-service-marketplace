@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Discover, compare and book trusted local services.">
+  <title>ServiceNest — Services made simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">S</span> ServiceNest<span class="brand-dot">.</span></a>
+  <nav><a href="#services">Explore services</a><a href="#how">How it works</a><button class="text-button" id="myBookingsBtn">My bookings</button></nav>
+  <div class="auth-area" id="authArea"><button class="btn btn-outline" id="loginBtn">Log in</button><button class="btn btn-primary" id="registerBtn">Get started <span>↗</span></button></div>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="pulse"></span> YOUR EVERYDAY, MADE EASIER</div>
+      <h1>Good help is<br>closer than <span>you think.</span></h1>
+      <p class="hero-sub">Find trusted professionals for the things that matter. Compare services, book in minutes, get on with your day.</p>
+      <div class="search-box"><span class="search-icon">⌕</span><input id="searchInput" placeholder="What service do you need?" aria-label="Search services"><button id="searchBtn" class="btn btn-primary">Search <span>→</span></button></div>
+      <div class="hero-proof"><div class="avatar-stack"><span>R</span><span>A</span><span>M</span><span>+</span></div><div><strong>Trusted by local customers</strong><small>Quality services, one simple place</small></div></div>
+    </div>
+    <div class="hero-art">
+      <div class="art-glow"></div><div class="art-card main-art"><div class="art-top"><span class="mini-label">SERVICE OF THE DAY</span><span class="status"><i></i> Available</span></div><div class="clean-illustration"><div class="sun"></div><div class="plant">♧</div><div class="sparkle s1">✦</div><div class="sparkle s2">✧</div><div class="person"><div class="head"></div><div class="body"></div><div class="arm"></div><div class="bucket">✦</div></div><div class="floor"></div></div><div class="art-bottom"><div><b>Home cleaning</b><small>By Sparkle Home Care</small></div><strong>₹799<span>/visit</span></strong></div></div>
+      <div class="float-card rating-float"><span class="star">★</span><div><b>4.9/5</b><small>Customer rating</small></div></div>
+      <div class="float-card verified-float"><span class="check">✓</span><div><b>Reliable pros</b><small>Services you can trust</small></div></div>
+    </div>
+    <div class="hero-orb"></div>
+  </section>
+  <section class="trust-strip"><span>MADE FOR REAL LIFE</span><div>⌂ Home services</div><div>✧ Skilled professionals</div><div>♡ Easy booking</div><div>✓ Customer reviews</div></section>
+  <section class="services-section" id="services">
+    <div class="section-heading"><div><div class="eyebrow">FIND YOUR FIX</div><h2>What can we help with?</h2><p>Good people. Great work. No unnecessary hassle.</p></div><a class="view-all" href="#services" id="clearFilters">View all services <span>↗</span></a></div>
+    <div class="filters" id="filters"></div><div id="serviceGrid" class="service-grid"><div class="loading">Loading services…</div></div>
+  </section>
+  <section class="how-section" id="how"><div class="eyebrow">SIMPLE BY DESIGN</div><h2>From “I need help” to “all sorted.”</h2><div class="steps"><article><span class="step-no">01</span><div class="step-icon">⌕</div><h3>Find your service</h3><p>Browse categories and compare prices, details and ratings.</p></article><article><span class="step-no">02</span><div class="step-icon">▣</div><h3>Book a time</h3><p>Choose a date, share the service address and add any notes.</p></article><article><span class="step-no">03</span><div class="step-icon">✓</div><h3>Get it sorted</h3><p>Keep track of your bookings and review the service afterward.</p></article></div></section>
+  <section class="provider-cta"><div><div class="eyebrow">ARE YOU A PROFESSIONAL?</div><h2>Your skills deserve<br>a bigger audience.</h2><p>List your service and help more customers discover what you do best.</p><button class="btn btn-light" id="providerBtn">Join as a provider <span>→</span></button></div><div class="cta-art"><div class="cta-circle">✦</div><div class="cta-note"><b>Make your work visible.</b><span>Grow one booking at a time.</span></div><div class="cta-symbol">↗</div></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">S</span> ServiceNest<span class="brand-dot">.</span></a><span>Good help. Right when you need it.</span><small>© 2026 ServiceNest · Demo project</small></footer>
+
+<div class="modal-backdrop hidden" id="modalBackdrop"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div id="modalContent"></div></section></div>
+<div class="toast hidden" id="toast"></div>
+<script src="./app.js"></script>
+</body></html>
